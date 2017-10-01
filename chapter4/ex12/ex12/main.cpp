@@ -7,9 +7,23 @@
 //
 
 #include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+int main()
+{
+    int * pi = new int;
+    *pi = 1001;
+    
+    cout << "int ";
+    cout << "값 = " << *pi << "위치 = " << pi << "\n";
+    
+    double * pd = new double;
+    *pd = 10000001.0;
+    
+    cout << "double ";
+    cout << "값 = " << *pd << ": 위치 = " << pd << "\n";
+    cout << "pi의 크기 = " << sizeof pi;
+    cout << ": *pi의 크기 = " << sizeof *pi << "\n";
+    cout << "pd의 크기 = " << sizeof pd;
+    cout << ": *pd의 크기 = " << sizeof *pd << "\n";
     return 0;
 }
