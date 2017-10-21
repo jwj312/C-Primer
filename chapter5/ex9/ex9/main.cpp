@@ -9,6 +9,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+const int ArSize = 20;
 int main()
 {
     cout << "단어를 입력하고 Enter 키를 누르십시오: ";
@@ -17,7 +18,7 @@ int main()
     
     char temp;
     int i,j;
-    for (j = 0; i = strlen(word) - 1; j < i; --i, ++j)
+    for (j = 0; i = strlen(word) - 1; j < i; --i, ++j)//??왜 에러가 나냐
     {
         temp = word[i];
         word[i] = word[j];
