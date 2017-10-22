@@ -17,8 +17,8 @@ int main()
     cin >> word;
     
     char temp;
-    int i,j;
-    for (j = 0; i = strlen(word) - 1; j < i; --i, ++j)//??왜 에러가 나냐
+    long long i,j;
+    for (j = 0, i = strlen(word) - 1; j < i; --i, ++j)//??왜 에러가 나냐
     {
         temp = word[i];
         word[i] = word[j];
