@@ -13,9 +13,10 @@ int main()
 {
     cout << "단어를 입력하고 Enter 키를 누르십시오: ";
     char word[ArSize];
-    cin >> word;
+    //cin >> word;
+    cin.get(word, ArSize);
     
-    for (int i = strlen(word) - 1; i >= 0; --i) //?? 경고창이 뜬다..
+    for (long long i = strlen(word) - 1; i >= 0; --i) //?? 경고창이 뜬다..
         cout << word[i];
     cout << "\n";
     return 0;
