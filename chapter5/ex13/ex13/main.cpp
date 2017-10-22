@@ -17,8 +17,12 @@ int main()
     
     cout << "카운트를 시작합니다.\a\n";
     clock_t start = clock();
-    while (clock() - start < delay )
+    while (clock() - start < delay ) {
         ;
+    }
     cout << "마침\a\n";
+    
+    //cout.put('x');
+    //EOF
     return 0;
 }
