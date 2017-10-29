@@ -7,9 +7,9 @@
 //
 
 #include <iostream>
-using namespace std;
+#include "main.h"
 
-float myFunctionA(int value);
+using namespace std;
 
 int main()
 {
