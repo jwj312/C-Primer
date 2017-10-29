@@ -8,11 +8,28 @@
 
 #include <iostream>
 using namespace std;
+
+float myFunctionA(int value);
+
 int main()
 {
+    float returnValue = myFunctionA(10);
+    
+    cout << "리턴값:" << returnValue << endl;
+    
+    return 0;
+}
+
+
+float myFunctionA(int value)
+{
+    cout << "받은값: " << value << endl;
+    if (value == 0) {
+        return value;
+    }
     cout << "이 프로그램은 하드 디스크를 다시 포맷하고\n"
-            "모든 데이터를 파괴합니다.\n"
-            "계속하시겠습니까? <y/n> ";
+    "모든 데이터를 파괴합니다.\n"
+    "계속하시겠습니까? <y/n> ";
     char ch;
     cin >> ch;
     if (ch == 'y' || ch == 'Y')
@@ -21,6 +38,10 @@ int main()
         cout << "현명한 선택입니다. 종료합니다.\n";
     else
         cout << "y도 n도 입력하시지 않으시니 "
-            "디스크에 관심이 없는 모양이군요.\n";
-    return 0;
+        "디스크에 관심이 없는 모양이군요.\n";
+    
+    //float returnValue = 10.012345;
+    
+    return myFunctionA(value - 1);
 }
+
