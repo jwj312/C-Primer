@@ -14,10 +14,12 @@ int main()
     int spaces = 0;
     int total = 0;
     cin.get(ch);
-    while (ch != '.')
-    {
-        if (ch == ' ')
+    while (ch != '.') {
+        if (ch == ' ') {
             spaces++;
+            cout << "횟수: " << spaces << endl;
+            return 0;
+        }
         total++;
         cin.get(ch);
     }
