@@ -8,11 +8,8 @@
 
 #ifndef n_chars_h
 #define n_chars_h
-void n_chars(char c, int n)
-{
-    while (n-- > 0)
-        std::cout << c;
-}
+
+void n_chars(char c, int n);
 
 
 #endif /* n_chars_h */

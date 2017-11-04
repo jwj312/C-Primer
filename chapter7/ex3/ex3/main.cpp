@@ -7,13 +7,13 @@
 //
 
 #include <iostream>
-#include "n_chars.h"
+#include "main.h"
 using namespace std;
-void n_chars(char, int);
+
 int main()
 {
-    int times;
-    char ch;
+    int times = 0;
+    char ch = NULL;
     
     cout << "문자를 입력하고 Enter 키를 누르십시오: ";
     cin >> ch;
@@ -29,6 +29,13 @@ int main()
     cout << "times의 값은 " << times << "입니다.\n";//경고??
     cout << "종료합니다.\n";
     return 0;
+}
+
+void n_chars(char c, int n)
+{
+    while (n-- > 0) {
+        std::cout << c;
+    }
 }
 
 

@@ -7,9 +7,8 @@
 //
 
 #include <iostream>
-#include "showmenu.h"
-#include "report.h"
-#include "comfort.h"
+#include "main.h"
+
 using namespace std;
 int main()
 {
@@ -36,7 +35,23 @@ int main()
     cout << "종료합니다!\n";
     return 0;
 }
-
+void showmenu()
+{
+    std::cout << "1, 2, 3, 4, 5 중 하나를 입력하고 Enter 키를 누르십시오:\n"
+    "1) 경보       2) 보고\n"
+    "3) 알리바이    4) 휴식\n"
+    "5) 종료\n";
+}
+void report()
+{
+    std::cout << "이번 주는 영업이 잘되었습니다.\n"
+    "판매량이 120%나 늘었고, 지출은 35% 줄었습니다.\n";
+}
+void comfort()
+{
+    std::cout << "사원들은 당신을 업계 최고의 사장으로 생각합니다.\n"
+    "이사회도 당신을 업계 최고의 사장으로 생각합니다.\n";
+}
 
 
 

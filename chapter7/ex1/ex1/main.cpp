@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "simple.h"
+#include "main.h"
 using namespace std;
 
 int main()
@@ -15,6 +15,10 @@ int main()
     cout << "main()에서 simple() 함수를 호출하게 됩니다.\n";
     simple();
     return 0;
+}
+void simple()
+{
+    std::cout << "나는 간단한(simple) 함수입니다.\n";
 }
 
 

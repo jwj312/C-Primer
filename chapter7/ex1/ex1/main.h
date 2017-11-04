@@ -8,10 +8,7 @@
 
 #ifndef simple_h
 #define simple_h
-void simple()
-{
-    std::cout << "나는 간단한(simple) 함수입니다.\n";
-}
+void simple();
 
 
 #endif /* simple_h */
